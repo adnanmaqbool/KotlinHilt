@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.adnan.kotlinhilt.screens.fragments.SplashFragment"
+        android:label="Splash Fragment"
+        tools:layout="@layout/fragment_splash">
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.adnan.kotlinhilt.screens.fragments.HomeFragment"
+        android:label="Home Fragment"
+        tools:layout="@layout/fragment_home">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.adnan.kotlinhilt.screens.fragments.SettingFragment"
+        android:label="Settings Fragment"
+        tools:layout="@layout/fragment_sample">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.adnan.kotlinhilt.screens.fragments.MessageFragment"
+        android:label="Settings Fragment"
+        tools:layout="@layout/fragment_sample">
+
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.adnan.kotlinhilt.screens.fragments.ProfileFragment"
+        android:label="Settings Fragment"
+        tools:layout="@layout/fragment_sample">
+
+    </fragment>
+
+
+
+</navigation>

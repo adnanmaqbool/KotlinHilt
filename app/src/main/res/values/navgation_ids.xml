@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="splash_fragment_action" type="id" />
+    <item name="home_fragment_action" type="id" />
+
+    <item name="setting_fragment_action" type="id" />
+    <item name="chat_fragment_action" type="id" />
+    <item name="profile_fragment_action" type="id" />
+
+</resources>

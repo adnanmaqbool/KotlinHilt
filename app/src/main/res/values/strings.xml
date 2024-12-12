@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">KotlinCoinMVVM</string>
+    <string name="head">Head</string>
+    <string name="sub_head">sub head</string>
+    <string name="category_list">Category List</string>
+    <string name="no_record_found">No record found</string>
+    <string name="setting">Setting</string>
+    <string name="message">Message</string>
+    <string name="profile">Profile</string>
+</resources>

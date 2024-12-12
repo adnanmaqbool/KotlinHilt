@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/settingFragment"
+        android:icon="@drawable/ic_bt_clinic"
+        android:title="@string/setting" />
+    <item
+        android:id="@+id/chatFragment"
+        android:icon="@drawable/ic_bt_message"
+        android:title="@string/message" />
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/ic_bt_account"
+        android:title="@string/profile" />
+
+
+</menu>
+
+<!--<item-->
+<!--android:id="@+id/bookingListFragment"-->
+<!--android:icon="@drawable/ic_booking"-->
+<!--android:title="@string/booking" />-->

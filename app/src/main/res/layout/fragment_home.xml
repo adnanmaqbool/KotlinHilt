@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+     >
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/start_guideline"
+            style="@style/start_gl"
+            android:orientation="vertical" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/end_guideline"
+            style="@style/end_gl"
+            android:orientation="vertical" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/bottom_guideline"
+            style="@style/bottom_gl" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/top_guideline"
+            style="@style/top_gl" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_heading"
+            style="@style/TEXT_REGULAR_GREY_15"
+            android:text="@string/category_list"
+            app:layout_constraintStart_toStartOf="@id/start_guideline"
+            app:layout_constraintEnd_toEndOf="@+id/end_guideline"
+            app:layout_constraintTop_toTopOf="@+id/top_guideline"
+            android:textSize="@dimen/_22ssp"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_category"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/start_guideline"
+            app:layout_constraintEnd_toEndOf="@+id/end_guideline"
+            app:layout_constraintTop_toBottomOf="@+id/tv_heading"
+            tools:listitem="@layout/home_item"
+            tools:itemCount="3"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/emptyStateView"
+            style="@style/TEXT_REGULAR_GREY_15"
+            android:text="@string/no_record_found"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@id/start_guideline"
+            app:layout_constraintEnd_toEndOf="@+id/end_guideline"
+            app:layout_constraintTop_toBottomOf="@+id/tv_heading"
+            app:layout_constraintBottom_toTopOf="@id/bottom_guideline"/>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
