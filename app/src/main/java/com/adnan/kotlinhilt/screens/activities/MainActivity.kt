@@ -42,6 +42,8 @@ class MainActivity : BaseActivity() {
         bottomNavigation.setupWithNavController(globalConfig.navController)
 
 
+
+
     }
 
 }
