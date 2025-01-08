@@ -1,5 +1,0 @@
-
-Hkotlin:S6619"0Remove this useless null check, it always fails.( Û¸™
-^kotlin:S6510"AMove "return" statements from all branches before "if" statement.(•…Á›ûÿÿÿÿ
-^kotlin:S6510"AMove "return" statements from all branches before "if" statement.(”¢Ÿşÿÿÿÿ
-Skotlin:S6511"=Merge chained "if" statements into a single "when" statement.(£Úw
