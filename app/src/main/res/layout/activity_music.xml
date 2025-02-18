@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Top AppBar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <ImageButton
+            android:id="@+id/btn_play"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_media_play"
+            android:contentDescription="Play" />
+
+        <ImageButton
+            android:id="@+id/btn_stop"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_delete"
+            android:contentDescription="Stop" />
+    </LinearLayout>
+
+    <!-- Album Cover -->
+    <ImageView
+        android:id="@+id/img_album"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_background"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="16dp" />
+
+    <!-- Song Title -->
+    <TextView
+        android:id="@+id/tv_song_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Song Name"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:layout_gravity="center" />
+
+    <!-- SeekBar & Time -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/tv_current_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0:00"
+            android:textSize="14sp" />
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/tv_total_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3:30"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Controls -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <ImageButton
+            android:id="@+id/btn_prev"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_prev"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Previous" />
+
+        <ImageButton
+            android:id="@+id/btn_play_pause"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_play"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Play/Pause" />
+
+        <ImageButton
+            android:id="@+id/btn_next"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_next"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Next" />
+
+        <ImageButton
+            android:id="@+id/btn_stop_actual"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@android:drawable/star_big_on"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Stop" />
+
+    </LinearLayout>
+
+</LinearLayout>

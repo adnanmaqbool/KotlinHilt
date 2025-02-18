@@ -59,6 +59,7 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.androidx.material3.android)
     testImplementation(libs.junit)
 //    implementation(libs.koin.android)
     implementation(libs.androidx.navigation.fragment.ktx)
@@ -84,11 +85,16 @@ dependencies {
     implementation(libs.app.update)
     implementation (libs.app.update.ktx)
 
-    implementation (libs.commons.net)
+
+
 
 
     implementation("com.google.dagger:hilt-android:2.46.1")
     kapt("com.google.dagger:hilt-android-compiler:2.46.1")
     kapt("androidx.hilt:hilt-compiler:1.1.0")
+
+
+    implementation("androidx.media:media:1.6.0")
+
 
 }
